@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Signup | Chakra Athletica</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="auth-layout">
+      <aside class="auth-side">
+        <a class="back-link" href="../index.html">Back to Home</a>
+        <span class="eyebrow light">User Access</span>
+        <h1>Create Account</h1>
+        <p class="lead">Separate signup page so you can edit user onboarding without touching admin or payment files.</p>
+      </aside>
+      <section class="auth-form-card">
+        <span class="eyebrow">Create account</span>
+        <h2 style="font-size:2.6rem; margin-top:0.8rem;">User Signup</h2>
+        <form id="userSignupForm" class="field-grid" style="margin-top:1rem;">
+          <div class="field-grid two">
+            <div class="field">
+              <label for="firstName">First name*</label>
+              <input id="firstName" type="text" required>
+            </div>
+            <div class="field">
+              <label for="lastName">Last name*</label>
+              <input id="lastName" type="text" required>
+            </div>
+          </div>
+          <div class="field-grid two">
+            <div class="field">
+              <label for="signupEmail">Email*</label>
+              <input id="signupEmail" type="email" required>
+            </div>
+            <div class="field">
+              <label for="signupPhone">Phone*</label>
+              <input id="signupPhone" type="tel" required>
+            </div>
+          </div>
+          <div class="field-grid two">
+            <div class="field">
+              <label for="signupPassword">Password*</label>
+              <input id="signupPassword" type="password" required>
+            </div>
+            <div class="field">
+              <label for="signupLocation">Preferred location*</label>
+              <select id="signupLocation" required>
+                <option value="">Select location</option>
+                <option>Bangalore</option>
+                <option>Raipur</option>
+              </select>
+            </div>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" required>
+            <span>I agree to the live <a href="https://www.chakraathletica.com/terms-of-use" target="_blank" rel="noreferrer">Terms of Use</a>.</span>
+          </label>
+          <div class="cta-row">
+            <button class="button primary" type="submit">Create Account</button>
+            <a class="button secondary" href="user-login.html">Already have an account? Login</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../database/db.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Chakra Athletica</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="auth-layout">
+      <aside class="auth-side">
+        <a class="back-link" href="../index.html">Back to Home</a>
+        <span class="eyebrow light">Admin Access</span>
+        <h1>Admin Login</h1>
+        <p class="lead">Login for bookings, riders, payments, franchise leads, and reports in separate columns and tabs.</p>
+      </aside>
+      <section class="auth-form-card">
+        <span class="eyebrow">High privilege access</span>
+        <h2 style="font-size:2.6rem; margin-top:0.8rem;">Admin Login</h2>
+        <form id="adminLoginForm" class="field-grid" style="margin-top:1rem;">
+          <div class="field">
+            <label for="adminLoginEmail">Admin email*</label>
+            <input id="adminLoginEmail" type="email" required>
+          </div>
+          <div class="field">
+            <label for="adminLoginPassword">Password*</label>
+            <input id="adminLoginPassword" type="password" required>
+          </div>
+          <div class="mini-panel">
+            <strong>Portal access includes</strong>
+            <p class="table-note">Who booked slot, who made payment, amount, payment ID, waiver state, rider data, leads, and reports.</p>
+          </div>
+          <div class="cta-row">
+            <button class="button primary" type="submit">Login to Admin Portal</button>
+            <a class="button secondary" href="signup.html">Admin Signup</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../database/db.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

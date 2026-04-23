@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login | Chakra Athletica</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="auth-layout">
+      <aside class="auth-side">
+        <a class="back-link" href="../index.html">Back to Home</a>
+        <span class="eyebrow light">User Access</span>
+        <h1>Login</h1>
+        <p class="lead">Login for bookings, credit packs, waiver completion, and payment flow.</p>
+      </aside>
+      <section class="auth-form-card">
+        <span class="eyebrow">Already have an account?</span>
+        <h2 style="font-size:2.6rem; margin-top:0.8rem;">User Login</h2>
+        <form id="userLoginForm" class="field-grid" style="margin-top:1rem;">
+          <div class="field">
+            <label for="userLoginEmail">Email*</label>
+            <input id="userLoginEmail" type="email" required>
+          </div>
+          <div class="field">
+            <label for="userLoginPassword">Password*</label>
+            <input id="userLoginPassword" type="password" required>
+          </div>
+          <div class="cta-row">
+            <button class="button primary" type="submit">Login and Continue</button>
+            <a class="button secondary" href="user-signup.html">Create Account</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../database/db.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Signup | Chakra Athletica</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="auth-layout">
+      <aside class="auth-side">
+        <a class="back-link" href="../index.html">Back to Home</a>
+        <span class="eyebrow light">Admin Access</span>
+        <h1>Admin Signup</h1>
+        <p class="lead">Register admin users with full access to riders, bookings, schedules, payments, franchise leads, app users, and reports.</p>
+      </aside>
+      <section class="auth-form-card">
+        <span class="eyebrow">Create admin account</span>
+        <h2 style="font-size:2.6rem; margin-top:0.8rem;">Admin Signup</h2>
+        <form id="adminSignupForm" class="field-grid" style="margin-top:1rem;">
+          <div class="field-grid two">
+            <div class="field"><label for="adminFirstName">First name*</label><input id="adminFirstName" type="text" required></div>
+            <div class="field"><label for="adminLastName">Last name*</label><input id="adminLastName" type="text" required></div>
+          </div>
+          <div class="field-grid two">
+            <div class="field"><label for="adminEmail">Work email*</label><input id="adminEmail" type="email" required></div>
+            <div class="field"><label for="adminPhone">Phone*</label><input id="adminPhone" type="tel" required></div>
+          </div>
+          <div class="field-grid two">
+            <div class="field">
+              <label for="adminRole">Admin role*</label>
+              <select id="adminRole" required>
+                <option value="">Select role</option>
+                <option>Super Admin</option>
+                <option>Studio Admin</option>
+                <option>Franchise Admin</option>
+                <option>Support Admin</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="adminStudio">Assigned studio*</label>
+              <select id="adminStudio" required>
+                <option value="">Select studio</option>
+                <option>Central BLR</option>
+                <option>Indiranagar</option>
+                <option>Koramangala</option>
+                <option>Raipur</option>
+                <option>All Studios</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-grid two">
+            <div class="field"><label for="adminPassword">Password*</label><input id="adminPassword" type="password" required></div>
+            <div class="field"><label for="adminConfirmPassword">Confirm password*</label><input id="adminConfirmPassword" type="password" required></div>
+          </div>
+          <div class="field">
+            <label for="adminNotes">Access notes</label>
+            <textarea id="adminNotes"></textarea>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" id="adminPolicyCheck" required>
+            <span>I confirm this admin has permission to access Chakra internal systems and agrees to the live <a href="https://www.chakraathletica.com/terms-of-use" target="_blank" rel="noreferrer">Terms of Use</a>.</span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" id="adminAllAccessCheck" required>
+            <span>Grant access to all platform data including riders, bookings, schedules, payments, franchise leads, app users, and reports.</span>
+          </label>
+          <div class="cta-row">
+            <button class="button primary" type="submit">Create Admin Account</button>
+            <a class="button secondary" href="login.html">Already have an account? Login</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../database/db.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

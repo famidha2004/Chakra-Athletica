@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Form | Chakra Athletica</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="auth-layout">
+      <aside class="auth-side">
+        <a class="back-link" href="../index.html">Back to Home</a>
+        <span class="eyebrow light">Request Box</span>
+        <h1>Send a Request</h1>
+        <p class="lead">This page saves the request locally for admin viewing and also lets you open an email to the official Chakra support address.</p>
+      </aside>
+      <section class="auth-form-card">
+        <span class="eyebrow">Support and queries</span>
+        <h2 style="font-size:2.6rem; margin-top:0.8rem;">Request Form</h2>
+        <form id="requestForm" class="field-grid" style="margin-top:1rem;">
+          <div class="field-grid two">
+            <div class="field"><label for="requestName">Name*</label><input id="requestName" type="text" required></div>
+            <div class="field"><label for="requestEmail">Email*</label><input id="requestEmail" type="email" required></div>
+          </div>
+          <div class="field-grid two">
+            <div class="field"><label for="requestPhone">Phone</label><input id="requestPhone" type="tel"></div>
+            <div class="field">
+              <label for="requestType">Request type*</label>
+              <select id="requestType" required>
+                <option value="">Select type</option>
+                <option>General Query</option>
+                <option>Trial Pack</option>
+                <option>Class Booking</option>
+                <option>Callback Request</option>
+                <option>Franchise Query</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="requestSubject">Subject*</label><input id="requestSubject" type="text" required></div>
+          <div class="field"><label for="requestMessage">Message*</label><textarea id="requestMessage" required></textarea></div>
+          <div class="cta-row">
+            <button class="button primary" type="submit">Save Request Locally</button>
+            <a class="button secondary" id="requestEmailAction" href="#">Send by Email</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../database/db.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

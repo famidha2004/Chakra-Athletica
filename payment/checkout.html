@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Chakra Athletica</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-page="payment">
+  <div class="payment-layout">
+    <section class="summary-box">
+      <a class="back-link" href="../index.html">Back</a>
+      <span class="eyebrow">Selected Plan</span>
+      <h1 id="planSummaryTitle">3 Classes</h1>
+      <p id="planSummaryName" class="lead" style="margin-top:0.5rem;">Credit Pack</p>
+      <div class="summary-meta">
+        <div><span>Step label</span><strong id="planStepLabel">3 Classes Credit Pack</strong></div>
+        <div><span>Credits</span><strong id="planSummaryCredits">3 Credit</strong></div>
+        <div><span>Validity</span><strong id="planSummaryValidity">1 month</strong></div>
+        <div><span>Location</span><strong id="summaryLocation">Bangalore</strong></div>
+      </div>
+      <p id="planDescription" class="lead" style="margin-top:1rem;">New to Chakra? This is the perfect pack for you.</p>
+      <ul id="planNotes" class="field-grid" style="margin-top:1rem; padding-left:1.2rem;"></ul>
+      <p class="summary-total" id="planSummaryTotal" style="margin-top:1rem;">Rs 1770</p>
+    </section>
+
+    <section class="payment-box">
+      <div class="price-box">
+        <span class="eyebrow light" id="paymentStudioLabel">Chakra Athletica - Central Bangalore</span>
+        <p style="margin-top:0.8rem;" id="paymentProviderLabel">Razorpay Trusted Business</p>
+        <strong id="paymentPriceValue">Rs 1770</strong>
+      </div>
+
+      <div class="offer-list">
+        <div class="offer-chip"><strong>Win up to INR 200 back</strong><p class="table-note">Across 4 Amazon Pay Balance txns</p></div>
+        <div class="offer-chip"><strong>Win up to Rs 100 cashback</strong><p class="table-note">On every transaction on Navi UPI</p></div>
+      </div>
+
+      <div class="payment-option-list">
+        <div class="payment-option"><div><strong>UPI</strong><p class="table-note">Google Pay, PhonePe, POP, Paytm</p></div><span>Recommended</span></div>
+        <div class="payment-option"><div><strong>Cards</strong><p class="table-note">Visa, MC, Rupay, Amex</p></div><span>Savings</span></div>
+        <div class="payment-option"><div><strong>EMI</strong><p class="table-note">HDFC, ICICI, IDFB, YESB</p></div><span>1.5%</span></div>
+        <div class="payment-option"><div><strong>Wallet</strong><p class="table-note">Amazon Pay, PhonePe, Mobikwik, Airtel Money</p></div><span>Cashback</span></div>
+      </div>
+
+      <div class="qr-card">
+        <span class="eyebrow">UPI QR</span>
+        <h3 style="font-size:1.8rem; margin-top:0.8rem;">Scan and Pay</h3>
+        <p class="table-note" style="margin-top:0.5rem;">Using <strong id="paymentUsingStudio">Central BLR</strong></p>
+        <p class="table-note" style="margin-top:0.3rem;">Mobile: <strong id="paymentMobileDisplay">+91 XXXXXXXXXX</strong></p>
+        <p class="table-note" style="margin-top:0.3rem;">UPI ID: <strong id="paymentUpiId">sampleupi@okbank</strong></p>
+        <img id="paymentQrImage" src="" alt="UPI QR">
+        <div class="small-pills">
+          <span>Google Pay</span><span>PhonePe</span><span>POP</span><span>CRED</span><span>Amazon Pay</span>
+        </div>
+      </div>
+
+      <form id="paymentFlowForm" class="field-grid" style="margin-top:1rem;">
+        <label class="checkbox">
+          <input type="checkbox" required>
+          <span>I agree to the live <a href="https://www.chakraathletica.com/terms-of-use" target="_blank" rel="noreferrer">Terms of Use</a> and <a href="https://www.chakraathletica.com/privacy-policy" target="_blank" rel="noreferrer">Privacy Policy</a>.</span>
+        </label>
+        <div class="cta-row">
+          <button class="button primary" type="submit">Payment Done</button>
+          <a class="button secondary" id="customerWhatsappLink" href="#" target="_blank" rel="noreferrer">WhatsApp Support</a>
+        </div>
+      </form>
+    </section>
+  </div>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../database/db.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

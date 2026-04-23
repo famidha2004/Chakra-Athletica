@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal | Chakra Athletica</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-page="admin-portal">
+  <div class="portal">
+    <div class="inline-links" style="margin-bottom:1rem;">
+      <a class="button secondary" href="../index.html">Back to Home</a>
+      <a class="button secondary" href="login.html">Admin Login</a>
+      <a class="button secondary" href="signup.html">Admin Signup</a>
+    </div>
+    <div class="portal-shell">
+      <aside class="portal-sidebar">
+        <span class="eyebrow">Admin Portal</span>
+        <h1 style="margin-top:0.8rem;">Chakra Ops</h1>
+        <p>Tabbed admin access with separate columns for who booked slot, who made payment, rider data, franchise leads, and reports.</p>
+        <div class="portal-tabs">
+          <button class="portal-tab active" type="button" data-tab="overview">Overview</button>
+          <button class="portal-tab" type="button" data-tab="bookings">Bookings</button>
+          <button class="portal-tab" type="button" data-tab="payments">Payments</button>
+          <button class="portal-tab" type="button" data-tab="riders">Riders</button>
+          <button class="portal-tab" type="button" data-tab="franchise">Franchise</button>
+          <button class="portal-tab" type="button" data-tab="queries">Queries</button>
+          <button class="portal-tab" type="button" data-tab="reports">Reports</button>
+        </div>
+      </aside>
+      <section class="portal-panel">
+        <div class="portal-view active" data-view="overview">
+          <div class="stat-grid">
+            <div class="stat-card"><span class="eyebrow">Bookings today</span><strong>128</strong></div>
+            <div class="stat-card"><span class="eyebrow">Payments settled</span><strong>Rs 1.92L</strong></div>
+            <div class="stat-card"><span class="eyebrow">Active riders</span><strong>15,284</strong></div>
+          </div>
+        </div>
+        <div class="portal-view" data-view="bookings">
+          <table class="admin-table">
+            <thead><tr><th>Rider</th><th>Email</th><th>Phone</th><th>Class</th><th>Studio</th><th>Booked Slot</th><th>Booked Via</th><th>Status</th></tr></thead>
+            <tbody id="bookingsTableBody"></tbody>
+          </table>
+        </div>
+        <div class="portal-view" data-view="payments">
+          <table class="admin-table">
+            <thead><tr><th>Payer</th><th>Email</th><th>Pack</th><th>Amount</th><th>Method</th><th>Payment ID</th><th>Status</th><th>Offer Used</th></tr></thead>
+            <tbody id="paymentsTableBody"></tbody>
+          </table>
+        </div>
+        <div class="portal-view" data-view="riders">
+          <table class="admin-table">
+            <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Preferred Studio</th><th>Pack Balance</th><th>Waiver</th><th>Referral</th><th>Notes</th></tr></thead>
+            <tbody id="usersTableBody"></tbody>
+          </table>
+        </div>
+        <div class="portal-view" data-view="franchise">
+          <table class="admin-table">
+            <thead><tr><th>Lead</th><th>City</th><th>Phone</th><th>Email</th><th>Status</th><th>Assigned Admin</th><th>Stage</th></tr></thead>
+            <tbody id="franchiseTableBody"></tbody>
+          </table>
+        </div>
+        <div class="portal-view" data-view="queries">
+          <table class="admin-table">
+            <thead><tr><th>Name</th><th>Email</th><th>Type</th><th>Subject</th><th>Message</th><th>Status</th></tr></thead>
+            <tbody id="queriesTableBody"></tbody>
+          </table>
+        </div>
+        <div class="portal-view" data-view="reports">
+          <table class="admin-table">
+            <thead><tr><th>Studio</th><th>Revenue</th><th>Bookings</th><th>Utilisation</th><th>No-Shows</th><th>Refunds</th><th>Top Class</th></tr></thead>
+            <tbody id="reportsTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../database/db.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

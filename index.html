@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chakra Athletica</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+  <header class="promo-bar">
+    <div class="promo-track">
+      <span>Intro pack: 3 classes for just Rs 1500</span>
+      <span>Burn up to 700 calories in 45 min</span>
+      <span>Beginner friendly. No prior fitness experience required.</span>
+      <span>Music-driven rides that feel like a party on a bike.</span>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="container nav-row">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>
+          <strong>Chakra</strong>
+          <small>Athletica</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="#plans">Plans</a>
+        <a href="#studios">Studios</a>
+        <a href="#access">Access</a>
+        <a href="admin/login.html">Admin</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy card soft">
+          <span class="eyebrow">Igniting human potential, one ride at a time</span>
+          <h1>Chakra Athletica</h1>
+          <p class="lead">Built in a cleaner file structure so you can edit user auth, admin auth, payment, and dashboard pages separately later.</p>
+
+          <div class="quick-stats">
+            <div><strong>45</strong><span>Minutes</span></div>
+            <div><strong>700</strong><span>Calories</span></div>
+            <div><strong>15k+</strong><span>Riders</span></div>
+          </div>
+
+          <div class="cta-row">
+            <a class="button primary" href="auth/user-signup.html">User Signup</a>
+            <a class="button secondary" href="auth/user-login.html">User Login</a>
+            <a class="button secondary" href="admin/login.html">Admin Login</a>
+            <a class="button secondary" href="admin/signup.html">Admin Signup</a>
+          </div>
+        </div>
+
+        <div class="hero-side card dark">
+          <span class="eyebrow light">Live-like public details</span>
+          <h2>Download the app, claim your pack, book your studio.</h2>
+          <p>WhatsApp, Instagram, app links, franchise CTA, and dynamic plan selection are separated into editable pages and scripts.</p>
+          <div class="cta-stack">
+            <a class="button light" id="iosAppLink" href="#" target="_blank" rel="noreferrer">Download for iOS</a>
+            <a class="button light" id="androidAppLink" href="#" target="_blank" rel="noreferrer">Download for Android</a>
+            <a class="button outline-light" id="customerWhatsappHome" href="#" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+            <a class="button outline-light" id="instagramHome" href="#" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="access" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Separate Access Pages</h2>
+          <p>Front-page entry points for both users and admins, each routed to separate HTML pages you can edit individually.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <span class="eyebrow">User Access</span>
+            <h3>User Login and Signup</h3>
+            <p>Create account, login, select pack, sign waiver, and continue to payment.</p>
+            <div class="cta-row">
+              <a class="button primary" href="auth/user-login.html">Login</a>
+              <a class="button secondary" href="auth/user-signup.html">Signup</a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="eyebrow">Admin Access</span>
+            <h3>Admin Login and Signup</h3>
+            <p>Login or register admins, then redirect to a separate tabbed admin portal with bookings, payments, riders, leads, and reports.</p>
+            <div class="cta-row">
+              <a class="button primary" href="admin/login.html">Login</a>
+              <a class="button secondary" href="admin/signup.html">Signup</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Plans</h2>
+          <p>Each plan button passes plan details into the payment page automatically.</p>
+        </div>
+        <div class="grid three">
+          <article class="card">
+            <span class="eyebrow">Intro Pack</span>
+            <h3>3 Classes</h3>
+            <p>3 Credit. 1 month. New to Chakra? This is the perfect pack for you.</p>
+            <p class="price">Rs 1770</p>
+            <a class="button primary plan-link" href="payment/checkout.html?plan=3-classes&studio=central-blr">Purchase</a>
+          </article>
+          <article class="card">
+            <span class="eyebrow">RIDE30</span>
+            <h3>30% Off First Class</h3>
+            <p>Single class entry offer from the homepage.</p>
+            <p class="price">Rs 885</p>
+            <a class="button primary plan-link" href="payment/checkout.html?plan=ride30&studio=central-blr">Purchase</a>
+          </article>
+          <article class="card">
+            <span class="eyebrow">RIDE50</span>
+            <h3>50% Off First Class</h3>
+            <p>Single class beginner-friendly offer shown on the beginners journey.</p>
+            <p class="price">Rs 650</p>
+            <a class="button primary plan-link" href="payment/checkout.html?plan=ride50&studio=central-blr">Purchase</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="studios" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Studios</h2>
+          <p>Studio selection also flows into the payment page, so the heading can change according to the chosen place.</p>
+        </div>
+        <div class="grid four">
+          <article class="card compact"><h3>Central BLR</h3><p>Bangalore</p><a class="button secondary" href="payment/checkout.html?plan=3-classes&studio=central-blr">Choose</a></article>
+          <article class="card compact"><h3>Indiranagar</h3><p>Bangalore</p><a class="button secondary" href="payment/checkout.html?plan=3-classes&studio=indiranagar">Choose</a></article>
+          <article class="card compact"><h3>Koramangala</h3><p>At Social Grid - 1st Floor</p><a class="button secondary" href="payment/checkout.html?plan=3-classes&studio=koramangala">Choose</a></article>
+          <article class="card compact"><h3>Raipur</h3><p>Currenty Tower</p><a class="button secondary" href="payment/checkout.html?plan=3-classes&studio=raipur">Choose</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Official Media</h2>
+          <p>Real Chakra public media pulled from Chakra-hosted image assets and an official Chakra YouTube channel embed, all editable from one local data file.</p>
+        </div>
+        <div class="media-grid">
+          <div class="media-frame">
+            <img id="chakraHeroImage" src="" alt="Chakra Athletica official media">
+          </div>
+          <div class="media-frame">
+            <iframe id="chakraVideoFrame" src="" title="Chakra Athletica official video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="media-stack" style="margin-top:1rem;">
+          <div class="media-frame"><img id="chakraSecondaryImage" src="" alt="Chakra Athletica studio image"></div>
+          <div class="media-frame"><img id="chakraCommunityImage" src="" alt="Chakra Athletica community image"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container grid two">
+        <article class="card">
+          <span class="eyebrow">Franchise</span>
+          <h3>Join our mission to revolutionise fitness and mental empowerment.</h3>
+          <p>Elite instructor training, seamless booking app support, signature events, and growth marketing support.</p>
+          <div class="cta-row">
+            <a class="button primary" id="franchiseWhatsappLink" href="#" target="_blank" rel="noreferrer">Franchise WhatsApp</a>
+            <a class="button secondary" href="https://www.chakraathletica.com/franchise" target="_blank" rel="noreferrer">Open Franchise Page</a>
+          </div>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Legal</span>
+          <h3>Official Terms and Privacy</h3>
+          <p>These stay linked to the live Chakra site so you can keep them accurate without duplicating legal content everywhere.</p>
+          <div class="cta-row">
+            <a class="button primary" href="https://www.chakraathletica.com/terms-of-use" target="_blank" rel="noreferrer">Terms of Use</a>
+            <a class="button secondary" href="https://www.chakraathletica.com/privacy-policy" target="_blank" rel="noreferrer">Privacy Policy</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Request Box</h2>
+          <p>Use this for support, partnership, callback, schedule, or trial requests. It saves locally for admin review and can also redirect to the official email.</p>
+        </div>
+        <div class="grid two">
+          <article class="card">
+            <span class="eyebrow">Quick Request</span>
+            <h3>Send a Request</h3>
+            <p>Open the separate request page to submit a message that appears in the admin portal queries tab.</p>
+            <div class="cta-row">
+              <a class="button primary" href="requests/request-form.html">Open Request Form</a>
+              <a class="button secondary" id="supportEmailLink" href="#">Email Support</a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="eyebrow">What it does</span>
+            <h3>Local plus email flow</h3>
+            <p>The request is saved locally in your browser for admin review, and the form also includes an email action to the website support email.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/site-data.js"></script>
+  <script src="database/db.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
